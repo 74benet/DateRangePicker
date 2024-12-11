@@ -1,4 +1,11 @@
 package com.example.aufgabe3.model
 
-// TODO Customise the data structure for a book entry according to the requirements
-data class BookingEntry()
+import java.time.LocalDate
+import java.util.UUID
+
+data class BookingEntry(
+    val id: String = UUID.randomUUID().toString(),
+    val name: String,
+    val arrivalDate: LocalDate,
+    val departureDate: LocalDate
+)
